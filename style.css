@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Steppe-Book';
+    src: url("Steppe-Book.ttf");
+}
+@font-face {
+    font-family: 'Steppe-ExtraBold';
+    src: url("Steppe-ExtraBold.ttf");
+}
+
+body{
+    background-color: #e4edff;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #b5bfcd;
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-text{
+    width: 191px;
+    vertical-align: bottom;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.menu{
+    margin-top: 20px;
+    margin-left: 810px;
+}
+
+.catalog{
+    display: flex;
+    gap: 90px;
+}
+
+.menu-item{
+    width: 111px;
+    font-size: 19px;
+    font-family: "Arial";
+    line-height: 130%;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+#change-vallet{
+    width: 10px;
+    padding: 5px 15px;
+    margin-top: -1%;
+    margin-left: -35px;
+    border: black 2px solid;
+    border-radius: 10px;
+    background-color: #b4c0cb
+}
+
+
+
+.menu-item:hover{
+    color: #e0ebf9
+}
+
+#change-vallet:hover{
+    background-color: #a8b2bf;
+}
+
+.main-content{
+    padding-top: 150px;
+    padding-bottom: 550px;
+}
+
+.main-info{
+    max-width: 811px;
+}
+
+.main-image{
+    position: absolute;
+    top: 50px;
+    right: -10px;
+
+    height: 850px;
+    width: 850px;
+
+    z-index: -1;
+}
+
+
+.main-title{
+    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-size: 90px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.main-text{
+    font-family: 'Steppe-Book', 'sans-serif';
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 600;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    color: black;
+}
+
+.button{
+    background-color: black;
+    color: #e4edff;
+
+    width: 250px;
+    height: 100px;
+
+    border-radius: 60px;
+    border: 0;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    font-family: 'Steppe-Book', 'sans-serif';
+    font-size: 25px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.create-card-button{
+    width: 300px;
+    height: 50px;
+
+    font-size: 17px;
+    margin-top: -14px;
+    margin-left: 320px;
+}
+
+.button:hover{
+    background-color: #252525;
+}
+
+.common-title{
+    font-size: 60px;
+    font-family: 'Steppe-Book', 'sans-serif';
+    line-height: 100%;
+    text-align: center;
+    color: black;
+}
+
+.games{
+    display: flex;
+    justify-content: center;
+}
+
+
+.games-items{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 140px 64px;
+    margin-top: 180px;
+}
+
+.game-item{
+    background-color: white;
+    color: black;
+}
+
+.games-item-image{
+    height: 260px;
+    text-align: center;
+}
+
+.games-item-image img{
+    height: 278px;
+    top: -18px;
+    position: relative;
+    max-width: 100%;
+}
+
+.games-item-detales{
+    margin: 24px;
+}
+
+.games-item-title{
+    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.games-detales-extra{
+    display: flex;
+    justify-content: center;
+
+}
+
+.games-item-price{
+    font-family: 'Steppe-ExtraBold', 'sans-serif';
+    font-size: 24px;
+    margin-right: -30px;
+}
+
+.buy-button{
+    height: 40px;
+    width: 150px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.button-part-two{
+    display: flex;
+    justify-content: center;
+
+    margin: 100px 0;
+}
+
+.new-games-section{
+    height: 70px;
+    width: 300px;
+
+    color: white;
+    font-family: 'Steppe-Book', 'sans-serif';
+}
+
+.games-part-two{
+    display: none;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.main-section{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 90px;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #c6cfdf;
+
+    width: 1200px;
+    height: 750px;
+
+    border: 2px solid #959ba6;
+    border-radius: 50px;
+    border-radius: 30px;
+}
+
+.installer-button{
+    margin: 0;
+    height: 50px;
+    font-size: 20px;
+}
+
+#name-for-card{
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-radius:10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+#price-for-card{
+    height: 30px;
+    width: 300px;
+    padding: 10px;
+    border: 0;
+    border-radius:10px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+
+.input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+
+    font-family: 'Steppe-Book', 'sans-serif';
+
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+
+    margin: 25px 0;
+
+    transition: background-color 0.2s;
+}
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+/* Focus */
+.input-file input[type=file]:focus + span {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Hover/active */
+.input-file:hover span {
+    background-color: #59be6e;
+}
+.input-file:active span {
+    background-color: #2E703A;
+}
+
+/* Disabled */
+.input-file input[type=file]:disabled + span {
+    background-color: #eee;
+}
+
+#name-for-card{
+    margin-bottom: 20px;
+}
+
+#price-for-card{
+    margin-bottom: 70px;
+}
+
+.preview-image img{
+    width: 250px;
+    height: 300px;
+}
+
+.footer{
+    padding: 126px 0 50px 0;
+    text-align: center;
+}
+
+.logo-text-in-footer{
+    color: black;
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.nickname{
+    margin-top: 14px;
+    font-size: 26px;
+    font-family: 'Steppe-Book', 'sans-serif';
+    line-height: 130%;
+
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
